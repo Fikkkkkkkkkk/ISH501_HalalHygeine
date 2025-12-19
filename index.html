@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, responsive blogging platform with engaging content and beautiful design">
+    <title>TechInsights - Modern Blog Platform</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/LogoUiTM.png" alt="Logo" class="navbar-logo">
+                <span class="brand-text">Mvnch Bites Cafe</span>
+            </a>
+            
+            <!-- Mobile Search Toggle -->
+            <button class="mobile-search-toggle d-md-none" id="mobileSearchToggle">
+                <i class="bi bi-search"></i>
+            </button>
+            
+            <!-- Desktop Search (always visible) -->
+            <div class="navbar-search d-none d-md-flex">
+                <div class="search-input-wrapper">
+                    <i class="bi bi-search search-icon"></i>
+                    <input type="text" class="navbar-search-input" id="navbarSearchInput" placeholder="Search keyword...">
+                    <button class="clear-search" id="clearNavSearch" style="display: none;">
+                        <i class="bi bi-x-circle"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Search (expandable) -->
+            <div class="mobile-search-bar d-md-none" id="mobileSearchBar">
+                <div class="search-input-wrapper">
+                    <i class="bi bi-search search-icon"></i>
+                    <input type="text" class="navbar-search-input" id="mobileSearchInput" placeholder="Search keyword...">
+                    <button class="clear-search" id="clearMobileSearch" style="display: none;">
+                        <i class="bi bi-x-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Opening Section -->
+    <section class="introduction-section hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="container px-4 py-5 position-relative">
+            <div class="row align-items-center g-5 py-5">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Hygiene Compliance in a Selected Premise <br>in UiTM Shah Alam</h1>
+                <p class="lead text-white">
+                    <strong>Code Subject :</strong> ISH501 Halal Hygiene & Sanitation<br>
+                    <strong>Prepared for :</strong> Dr. Siti Sarah binti Izham
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster Section -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="banner-image-container">
+                <img src="img/poster.jpeg" alt="Banner" class="banner-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro-text-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center text-lg-start">
+                    <h2 class="intro-title-fancy mb-4">Introduction</h2>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="intro-image-container">
+                        <img src="img/Introduction_img.jpeg" alt="Hygiene Inspection" class="intro-image">
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="intro-text">
+                        <ul class="intro-list">
+                            <li>This assessment was conducted at a student-run food business in UiTM Shah Alam, Selangor, which serves students and staff on campus while providing valuable hands-on business experience for student entrepreneurs.</li>
+                            <li>Although the food outlet has achieved an acceptable level of hygiene, continuous monitoring and improvement are necessary to consistently maintain food safety and halal compliance.</li>
+                            <li>The food operation is managed by students under supervision, with a small workforce operating on rotating shifts, where high customer demand during peak hours may increase the risk of hygiene issues such as cross-contamination.</li>
+                            <li>This audit focuses on evaluating food handling practices, personal hygiene of food handlers, cleanliness of equipment and premises, and compliance with Food Hygiene Regulations 2009, Good Manufacturing Practice (GMP), Good Hygiene Practices (GHP), and MS 1500:2019 halal standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section -->
+    <section class="method-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="intro-title-fancy mb-5">Methodology</h2>
+                    <div class="flowchart-container">
+                        <!-- Step 1 -->
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <h4 class="flow-title">Preaudit</h4>
+                            <!-- <p class="flow-desc">Initial site visit and visual inspection of premises</p> -->
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="bi bi-clipboard-check"></i>
+                            </div>
+                            <h4 class="flow-title">On-site Audit</h4>
+                            <!-- <p class="flow-desc">Detailed checklist assessment using standards</p> -->
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="bi bi-camera"></i>
+                            </div>
+                            <h4 class="flow-title">Post Audit</h4>
+                            <!-- <p class="flow-desc">Recording evidence and photographing issues</p> -->
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <h4 class="flow-title">Analysis</h4>
+                            <!-- <p class="flow-desc">Evaluating compliance and reporting findings</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Gallery Section -->
+    <section class="image-gallery-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="intro-title-fancy mb-5">Full Audit Checklist</h2>
+                </div>
+            </div>
+            <!-- Desktop Grid -->
+            <div class="gallery-grid d-none d-md-block">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="gallery-item">
+                            <h4 class="gallery-desc">Section A: Personnel Hygiene</h4>
+                            <img src="img/checklist_img01_page-0001.jpg" alt="Image 1" class="gallery-image">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-item">
+                            <h4 class="gallery-desc">Section B: Sanitation Facilities</h4>
+                            <img src="img/checklist_img02_page-0001.jpg" alt="Image 2" class="gallery-image">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-item">
+                            <h4 class="gallery-desc">Section C: Premise Hygiene System</h4>
+                            <img src="img/checklist_img03_page-0001.jpg" alt="Image 3" class="gallery-image">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-item">
+                            <h4 class="gallery-desc">Section D: Food Protection</h4>
+                            <img src="img/checklist_img04_page-0001.jpg" alt="Image 4" class="gallery-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Slider -->
+            <div class="gallery-slider d-md-none">
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slider-item">
+                            <h4 class="gallery-desc">Section A: Personnel Hygiene</h4>
+                            <img src="img/checklist_img01_page-0001.jpg" alt="Image 1" class="gallery-image">
+                        </div>
+                        <div class="slider-item">
+                            <h4 class="gallery-desc">Section B: Sanitation Facilities</h4>
+                            <img src="img/checklist_img02_page-0001.jpg" alt="Image 2" class="gallery-image">
+                        </div>
+                        <div class="slider-item">
+                            <h4 class="gallery-desc">Section C: Premise Hygiene System</h4>
+                            <img src="img/checklist_img03_page-0001.jpg" alt="Image 3" class="gallery-image">
+                        </div>
+                        <div class="slider-item">
+                            <h4 class="gallery-desc">Section D: Food Protection</h4>
+                            <img src="img/checklist_img04_page-0001.jpg" alt="Image 4" class="gallery-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="analysis-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="intro-title-fancy mb-5">Analysis & Findings</h2>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="1" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_handjewelry.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 1" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Full Compliance with Jewellery and Accessories Policy</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">Food handlers were consistently observed to be free of personal jewellry (rings, watches, bracelets) during all food handling activities.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation :</strong>Food handlers were consistently observed to be free of personal jewellry (rings, watches, bracelets) during all food handling activities.</p>
+                                        <hr class="my-3">   
+                                        <p><strong>Regulation :</strong>Complies with Food Hygiene Regulations 2009 (Reg. 33 & 34) and MS 1514:2022 (GHP), which prohibit personal items that could contaminate food.</p>
+                                        <p><strong>Science :</strong>Prevents physical hazards (detached parts) and biological hazards. Jewellery traps moisture and exfoliated skin cells, creating microbial densities up to ten times greater than bare skin and interfering with effective handwashing.</p>
+                                        <p><strong>Islamic Principle :</strong>Embodies Sadd al-Dharai’ (blocking the means to harm) by proactively removing a predictable contamination risk, aligning with the prophetic command ‘la ḍarar wa la ḍirār’ (no harm nor reciprocating harm).</p>
+                                        <p>
+                                            <strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Jewellery-Free Check before the start of shift. 
+                                            <br>
+                                            Long Term : Install dedicated lockers or secure storage units for staff items.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="2" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_clothing.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 2" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Consistent Use of Clean Protective Clothing</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">All food handlers wore clean aprons as required, providing a physical barrier between personal clothing and food. However, the apron design includes external pockets, a known contamination hazard.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation :</strong>All food handlers wore clean aprons as required, providing a physical barrier between personal clothing and food. However, the apron design includes external pockets, a known contamination hazard.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Complies with Food Hygiene Regulations 2009 and MS 1514:2022 GHP requirements for protective clothing.</p>
+                                        <p><strong>Science :</strong>While aprons act as a physical barrier, pockets enable storage of personal items (e.g., smartphones), which can transfer pathogens and negate hand sanitation protocols.</p>
+                                        <p><strong>Islamic Principle :</strong>earing protective apparel reflects mas'uliyyah (accountability) to safeguard consumers.</p>
+                                        <p>
+                                            <strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Clean Apron Check before every shift begins.
+                                            <br>
+                                            Long Term : Replace current apron with Industrial Waterproof Aprons, especially for dishwashing and wet prep stations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="3" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_handwashing.jpeg" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 2" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Manual Handwashing Facilities Increase Recontamination Risk</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">The handwashing station is equipped with a manual twist-knob faucet, requiring sanitized hands to re-contact a potentially contaminated surface to turn off the water.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation :</strong>The handwashing station is equipped with a manual twist-knob faucet, requiring sanitized hands to re-contact a potentially contaminated surface to turn off the water.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Non-compliant with Good Manufacturing Practice (GMP) Clause 4.4.5.1 (d), which requires hands-free taps (pedal or sensor) to eliminate recontamination.</p>
+                                        <p><strong>Science :</strong>Faucet handles are a persistent recontamination hazard. Pathogens are easily transferred from the handle back onto clean, wet hands.</p>
+                                        <p><strong>Islamic Principle :</strong>The design forces a choice between hygiene and resource conservation (israf). To avoid recontact, users may leave  water running, which contradicts the human role as khalifah (guardian of resources).</p>
+                                        <p>
+                                            <strong>Recommendation :</strong>
+                                            <br>
+                                            Immediate Control : Hoursly disinfection of faucet handles; mandatory hand sanitizer user after washing.
+                                            <br>
+                                            ⁠System Upgarde : Install foot-pedal adapters on existing sinks.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="4" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_tissue.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 3" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Inadequate Hand Drying and Storage Practices</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">Disposable paper towels were stored without a protective dispenser, exposing them to environmental contaminants. Additionally, reusable fabric towels-a critical biological hazard-were present in the preparation area.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> Disposable paper towels were stored without a protective dispenser, exposing them to environmental contaminants. Additionally, reusable fabric towels-a critical biological hazard-were present in the preparation area.</p>
+<hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Violates GMP Clause 4.4.5.1 (c), which demands
+appropriate hand drying infrastructure.</p>
+                                        <p><strong>Science:</strong>Reusable towels become breeding grounds for
+microorganisms, with bacteria surviving for up to 24 hours.
+Exposed paper towels can be contaminated by splashes, dust,
+or aerosols.</p>
+                                        <p><strong>Islamic Principle :</strong>Fails to achieve itqan (perfection). The
+prophetic Sunnah illustrates the use of a clean towel,
+implying a fresh, uncontaminated item for each use. This
+practice undermines the principle of purity.</p>
+                                        <p><strong>Recommendation:</strong>
+                                            <br>
+                                            Short Term : Remove all fabric towels; store paper towels in a lidded container.    
+                                            <br>
+                                            Long Term : Install wall-mounted, auto-cut paper towel dispensers.
+                                            </p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="4" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_clean.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 4" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Exemplary Maintenance of Premise Cleanliness</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">The entire premise, including customer-facing and preparation areas, was exceptionally well-maintained, free from dirt, dust, spills, and cobwebs.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> The entire premise, including customer-facing and preparation areas, was exceptionally well-maintained, free from dirt, dust, spills, and cobwebs.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>VFully complies with Food Hygiene Regulations 2009 (Reg. 34 (1)), which obliges food handlers to maintain the cleanliness of the premises at all times.</p>
+                                        <p><strong>Science:</strong>Meticulous cleaning minimizes dust, which can harbor fungi and bacteria like Aspergillus and Staphylococcus, thus reducing the risk of airborne cross-contamination.</p>
+                                        <p><strong>Islamic Principle :</strong>Reflects a deep commitment to the hadith, 'Cleanliness is half of faith,' and the principle of Hifz al-Bi'ah (environmental protection).</p>
+                                        <p><strong>Recommendation:</strong> 
+                                            <br>
+                                            Short Term : Conduct an end-of-day inspection by the supervisor using a fixed and systematic checklist
+                                            <br>
+                                            Long Term : Implementing a standardized cleaning system within next 60 day.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="5" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_sampah.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 5" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Waste Bins Designed for Hand-Contact Act as Contamination Vector</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">The premise uses hand-lift model waste bins, which require direct hand contact with the lid—a high-risk surface for microbial transfer.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> WThe premise uses hand-lift model waste bins, which require direct hand contact with the lid—a high-risk surface for microbial transfer.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Fails to fully align with GMP Clause 4.4.3.1, which requires waste facilities be designed to prevent potential contamination.</p>
+                                        <p><strong>Science :</strong>Hands are a primary vehicle for cross-contamination. Bin lids harbor significant microbial loads that can be transferred to hands and subsequently to food or preparation surfaces.</p>
+                                        <p><strong>Islamic Principle :</strong>Contradicts the principle of removing harm ("Removing harmful things from the road is an act of charity"). A hand-lift bin introduces a preventable harm, failing the ethical duty to protect public welfare (maslahah).</p>
+                                        <p><strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Enforce strict handwashing protocol after any contact with bin lids.
+                                            <br>
+                                            Long Term : Replace hand-lift bins in food preparation areas with foot-operated models.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="6" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_fridge.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 6" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Effective Separation of Raw and Processed Materials</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">Wet raw materials were stored separately from processed materials within the freezer, preventing fluid drips and potential cross-contamination.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> Wet raw materials were stored separately from processed materials within the freezer, preventing fluid drips and potential cross-contamination.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Complies with GMP guideline Clause 4.4.8.4 (a), which requires that raw and processed food materials be kept apart during storage.</p>
+                                        <p><strong>Science :</strong>Fluids from thawing raw materials can carry pathogens like Salmonella, Listeria, and E. coli. Separation is a critical control measure to prevent these from contaminating ready-to-eat items.</p>
+                                        <p><strong>Islamic Principle :</strong>Embodies the principle of Ihtiyat (precaution) to avoid doubtful food and prevent contamination with najasah (impurities), ensuring the final product remains Toyyib (wholesome).</p>
+                                        <p><strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Date tagging on each packaging especially those that have opened.
+                                            <br>
+                                            Long Term : Dedicate the top section of exclusively for opened items and stock nearing expiration
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="7" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_pest.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 7" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Structural Flaws Create Unimpeded Access for Pests</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">A noticeable gap under the main door provides a direct entry
+point for insects and other pests, compromising the sanitary
+environment of the premise.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> A noticeable gap under the main door provides a direct entry
+point for insects and other pests, compromising the sanitary
+environment of the premise.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>FNon-compliant with GMP Clause 4.4.8.3 (b), which
+requires facilities to be maintained to prevent pest access and
+harborage.</p>
+                                        <p><strong>Science :</strong>Pests are significant vectors for contamination,
+spreading pathogenic bacteria through direct contact, droppings,
+and body parts. Gaps under doors are primary ingress points.</p>
+                                        <p><strong>Islamic Principle :</strong>CViolates the principles of Dar' al-Mafasid
+(averting harm) and Ihsan (excellence). Permitting pest entry
+risks the spread of Najasah (impurities) and fails the duty to
+provide Halalan Toyyiban food.</p>
+                                        <p><strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Seal door gaps using door gap rubber strips or a door sweep.
+                                            <br>
+                                            Long Term : Install professional, tight-fitting pest-proof doors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="8" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_display.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 8" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Secure Display Cabinets Protect Ready-to-Eat Food</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">All bakery products are placed inside an enclosed glass display
+chiller, which functions as a physical barrier against dust, airborne
+particles, and direct customer contact.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> All bakery products are placed inside an enclosed glass display
+chiller, which functions as a physical barrier against dust, airborne
+particles, and direct customer contact.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Complies with GMP Clause 4.2.1.3 and MS
+1514:2022, which emphasize the protection of food during
+display and service.</p>
+                                        <p><strong>Science :</strong>A critical control measure. The glass barrier
+prevents contamination from airborne microorganisms
+and respiratory droplets, known vectors for foodborne
+pathogens.</p>
+                                        <p><strong>Islamic Principle :</strong>Aligns with hifz al-nafs (Preservation of
+Life), a primary objective of Maqasid al-Shariah. Protecting
+food from contamination fulfills the Quranic command to
+'not throw yourselves into destruction' (Al-Baqarah: 195).</p>
+                                        <p><strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Use food-grade covers and mandate all enclosed display cabinets be closed immediately after every retrieval.
+                                            <br>
+                                            Long Term : Scheduled inspection of door gaskets (seals).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm js-analysis-card" data-id="9" style="cursor: pointer; transition: transform 0.2s;">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-4 h-100">
+                                <img src="img/analysis/analysis_utensil.png" class="img-fluid rounded-start h-100 object-fit-cover js-analysis-img" alt="Analysis 9" style="min-height: 180px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold js-analysis-title">Improper Co-mingling of Food-Contact and Cleaning Utensils</h5>
+                                    <p class="card-text text-muted small js-analysis-desc">IFood-contact equipment (whisks, tongs) were stored in the
+same holder as sanitation instruments (cleaning brushes),
+creating a direct risk of cross-contamination.</p>
+                                    <!-- Hidden Details for Modal -->
+                                    <div class="d-none js-analysis-details">
+                                        <p><strong>Observation:</strong> Food-contact equipment (whisks, tongs) were stored in the
+same holder as sanitation instruments (cleaning brushes),
+creating a direct risk of cross-contamination.</p>
+                                        <hr class="my-3">  
+                                        <p><strong>Regulation :</strong>Ciolates the principle of Food Hygiene
+Regulations 2009 (Reg. 33), which mandates takingall
+reasonable precautions to prevent food contamination.</p>
+                                        <p><strong>Science :</strong>Cleaning equipment carries a higher microbial load.
+Storing them with sanitized food utensils facilitates the
+transfer of pathogens back onto surfaces that will touch food.</p>
+                                        <p><strong>Islamic Principle :</strong>Compromises the Toyyib (wholesome,
+pure) aspect of Halalan Toyyiban. Mixing cleaning and food
+utensils undermines the state of purity required throughout
+the food preparation process.</p>
+                                        <p><strong>Recommendation :</strong>
+                                            <br>
+                                            Short Term : Provide separate, clearly labeled holders for cleaning tools and food-contact utensils.
+                                            <br>
+                                            Long Term : Long Term : Install wall mounted perforated utensils holder
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusioin Section -->
+    <section class="Conclusion-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center text-lg-start">
+                    <h2 class="intro-title-fancy mb-4">Conclusion</h2>
+                </div>
+                
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="intro-text">
+                        <ul class="intro-list">
+                            <li>The audit found that the premise follows basic hygiene practices, including clean staff attire, good personal hygiene, a clean environment, and proper storage of raw materials.</li>
+                            <li>The findings also identified several hygiene non-compliances such as a lack of sinks, no proper hand-drying facilities, unsuitable waste bins, gaps between doors, and poor separation of food equipment and cleaning utensils.</li>
+                            <li>From Islamic perspectives, the detection of non-compliances may severely affect the toyyib aspect of food preparation, despite the premise demonstrating initiatives to maintain cleanliness and uphold order.</li>
+                            <li>The premises must meet toyyib requirements by fixing all hygiene issues to fully comply with both hygiene standards and Shariah principles.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="intro-image-container">
+                        <img src="img/logo.jpeg" alt="Hygiene Inspection" class="intro-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center py-4">
+             <a href="MUNCHBITES_FIELD_WORK.pdf" download class="btn btn-primary btn-lg" role="button">
+                <i class="bi bi-download me-2"></i>Download Full Report
+            </a>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
+        <img class="lightbox-content" id="lightboxImage">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+    </div>
+
+    <!-- Analysis Details Modal -->
+    <div id="analysisModal" class="analysis-modal">
+        <div class="analysis-modal-content">
+            <span class="analysis-modal-close">&times;</span>
+            <div class="analysis-modal-body">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="" alt="Analysis Detail" class="analysis-modal-img" id="analysisModalImg">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="analysis-modal-details">
+                            <h3 class="analysis-modal-title" id="analysisModalTitle">Title Here</h3>
+                            <div class="analysis-modal-text" id="analysisModalText">
+                                Description here...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
