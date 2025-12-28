@@ -789,14 +789,15 @@ function initSingleSlider(trackId, dotsId) {
         const threshold = sliderTrack.offsetWidth * 0.2;
         const touchDuration = Date.now() - startTime;
         
-        // If it's a quick tap (< 200ms) and minimal movement (< 10px), it's a click - don't change slides
-        if (touchDuration < 200 && Math.abs(diff) < 10) {
+        // If it's a quick tap (< 300ms) and minimal movement (< 20px), it's a click - don't change slides
+        if (touchDuration < 300 && Math.abs(diff) < 20) {
             goToSlide(currentSlide); // Stay on current slide
             
             // Try to find image in the clicked area or current slide and open lightbox
             const currentItem = sliderTrack.children[currentSlide];
             const img = currentItem.querySelector('img');
-            if (img && window.openLightbox) {
+            // Check strictly for function existence on window or just try to call it if defined
+            if (img && typeof window.openLightbox === 'function') {
                  window.openLightbox(img.src);
             }
             return;
